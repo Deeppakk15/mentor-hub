@@ -1,0 +1,17 @@
+{
+  "name": "mentorhub-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered College Project Lifecycle Management System",
+  "scripts": {
+    "start": "concurrently \"npm --prefix server start\" \"npm --prefix client run dev\"",
+    "dev": "concurrently \"npm --prefix server start\" \"npm --prefix client run dev\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server start",
+    "build": "npm --prefix client run build",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server run test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
